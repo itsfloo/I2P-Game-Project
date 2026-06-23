@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2522A5CB2D1B9FED00BCB873 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2522A5CA2D1B9FED00BCB873 /* cover.png */; };
+		2522A5CE2D1C2D6C00BCB873 /* lose_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522A5CD2D1C2D6C00BCB873 /* lose_scene.c */; };
+		2522A5D12D1C2D7900BCB873 /* win_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522A5D02D1C2D7900BCB873 /* win_scene.c */; };
+		2522A5D42D1C571F00BCB873 /* score_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522A5D32D1C571F00BCB873 /* score_scene.c */; };
+		2522A5D72D1C6E1000BCB873 /* shop_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522A5D62D1C6E1000BCB873 /* shop_scene.c */; };
+		2538E4EC2D1E455D001B0339 /* player1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2538E4EB2D1E455D001B0339 /* player1.png */; };
+		2538E4EE2D1E4763001B0339 /* capybara.png in Resources */ = {isa = PBXBuildFile; fileRef = 2538E4ED2D1E4763001B0339 /* capybara.png */; };
+		256C330A2D02B69200BECC90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256C33092D02B69200BECC90 /* Assets.xcassets */; };
+		256C330D2D02B69200BECC90 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 256C330C2D02B69200BECC90 /* Base */; };
+		256C331A2D02B69300BECC90 /* final_projectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C33192D02B69300BECC90 /* final_projectTests.m */; };
+		256C33242D02B69300BECC90 /* final_projectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C33232D02B69300BECC90 /* final_projectUITests.m */; };
+		256C33262D02B69300BECC90 /* final_projectUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 256C33252D02B69300BECC90 /* final_projectUITestsLaunchTests.m */; };
+		2579411B2D20FB8E00BE6C36 /* healthpotion.png in Resources */ = {isa = PBXBuildFile; fileRef = 2579411A2D20FB8E00BE6C36 /* healthpotion.png */; };
+		257F17D92D1B018B00D9F958 /* nthu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F17D82D1B018B00D9F958 /* nthu2.png */; };
+		257F17DB2D1B01E500D9F958 /* nthu.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F17DA2D1B01E500D9F958 /* nthu.png */; };
+		25C3926C2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C3925F2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib */; };
+		25C3926D2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C3925F2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C3926E2D03EEB800A4C45F /* liballegro_main.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392602D03EEB800A4C45F /* liballegro_main.5.2.10.dylib */; };
+		25C3926F2D03EEB800A4C45F /* liballegro_main.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392602D03EEB800A4C45F /* liballegro_main.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392702D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392612D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib */; };
+		25C392712D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392612D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392722D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392622D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib */; };
+		25C392732D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392622D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392742D03EEB800A4C45F /* liballegro.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392632D03EEB800A4C45F /* liballegro.5.2.10.dylib */; };
+		25C392752D03EEB800A4C45F /* liballegro.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392632D03EEB800A4C45F /* liballegro.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392762D03EEB800A4C45F /* liballegro_image.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392642D03EEB800A4C45F /* liballegro_image.5.2.10.dylib */; };
+		25C392772D03EEB800A4C45F /* liballegro_image.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392642D03EEB800A4C45F /* liballegro_image.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392782D03EEB800A4C45F /* liballegro_color.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392652D03EEB800A4C45F /* liballegro_color.5.2.10.dylib */; };
+		25C392792D03EEB800A4C45F /* liballegro_color.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392652D03EEB800A4C45F /* liballegro_color.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C3927A2D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392662D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib */; };
+		25C3927B2D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392662D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C3927C2D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392672D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib */; };
+		25C3927D2D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392672D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C3927E2D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392682D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib */; };
+		25C3927F2D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392682D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392802D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C392692D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib */; };
+		25C392812D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C392692D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392822D03EEB800A4C45F /* liballegro_font.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C3926A2D03EEB800A4C45F /* liballegro_font.5.2.10.dylib */; };
+		25C392832D03EEB800A4C45F /* liballegro_font.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C3926A2D03EEB800A4C45F /* liballegro_font.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392842D03EEB800A4C45F /* liballegro_video.5.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C3926B2D03EEB800A4C45F /* liballegro_video.5.2.10.dylib */; };
+		25C392852D03EEB800A4C45F /* liballegro_video.5.2.10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 25C3926B2D03EEB800A4C45F /* liballegro_video.5.2.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		25C392CF2D03EEF900A4C45F /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392872D03EEF800A4C45F /* map.c */; };
+		25C392D02D03EEF900A4C45F /* coins.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25C3928C2D03EEF800A4C45F /* coins.mp3 */; };
+		25C392D12D03EEF900A4C45F /* coins.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 25C3928D2D03EEF800A4C45F /* coins.ogg */; };
+		25C392D22D03EEF900A4C45F /* coins.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25C3928E2D03EEF800A4C45F /* coins.wav */; };
+		25C392D32D03EEF900A4C45F /* game_bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25C3928F2D03EEF800A4C45F /* game_bgm.mp3 */; };
+		25C392D42D03EEF900A4C45F /* game_bgm.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 25C392902D03EEF800A4C45F /* game_bgm.ogg */; };
+		25C392D52D03EEF900A4C45F /* game_bgm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25C392912D03EEF800A4C45F /* game_bgm.wav */; };
+		25C392D62D03EEF900A4C45F /* menu_bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25C392922D03EEF800A4C45F /* menu_bgm.mp3 */; };
+		25C392D72D03EEF900A4C45F /* menu_bgm.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 25C392932D03EEF800A4C45F /* menu_bgm.ogg */; };
+		25C392D82D03EEF900A4C45F /* menu_bgm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25C392942D03EEF800A4C45F /* menu_bgm.wav */; };
+		25C392D92D03EEF900A4C45F /* shooting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25C392952D03EEF800A4C45F /* shooting.mp3 */; };
+		25C392DA2D03EEF900A4C45F /* shooting.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 25C392962D03EEF800A4C45F /* shooting.ogg */; };
+		25C392DB2D03EEF900A4C45F /* shooting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25C392972D03EEF800A4C45F /* shooting.wav */; };
+		25C392DC2D03EEF900A4C45F /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25C392982D03EEF800A4C45F /* win.mp3 */; };
+		25C392DD2D03EEF900A4C45F /* win.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 25C392992D03EEF800A4C45F /* win.ogg */; };
+		25C392DE2D03EEF900A4C45F /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25C3929A2D03EEF800A4C45F /* win.wav */; };
+		25C392DF2D03EEF900A4C45F /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C3929C2D03EEF800A4C45F /* Button.png */; };
+		25C392E02D03EEF900A4C45F /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C3929D2D03EEF800A4C45F /* character.png */; };
+		25C392E12D03EEF900A4C45F /* coin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C3929E2D03EEF800A4C45F /* coin_icon.png */; };
+		25C392E22D03EEF900A4C45F /* coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C3929F2D03EEF800A4C45F /* coins.png */; };
+		25C392E32D03EEF900A4C45F /* Door.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A02D03EEF800A4C45F /* Door.png */; };
+		25C392E42D03EEF900A4C45F /* fireball.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A12D03EEF800A4C45F /* fireball.png */; };
+		25C392E52D03EEF900A4C45F /* guns.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A22D03EEF800A4C45F /* guns.png */; };
+		25C392E62D03EEF900A4C45F /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A32D03EEF800A4C45F /* heart.png */; };
+		25C392E72D03EEF900A4C45F /* map_packets.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A42D03EEF800A4C45F /* map_packets.png */; };
+		25C392E82D03EEF900A4C45F /* map0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A52D03EEF800A4C45F /* map0.txt */; };
+		25C392E92D03EEF900A4C45F /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A62D03EEF800A4C45F /* Minecraft.ttf */; };
+		25C392EB2D03EEF900A4C45F /* orange_bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A82D03EEF800A4C45F /* orange_bullet.png */; };
+		25C392EC2D03EEF900A4C45F /* panda_lose.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392A92D03EEF800A4C45F /* panda_lose.png */; };
+		25C392ED2D03EEF900A4C45F /* panda_win.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392AA2D03EEF800A4C45F /* panda_win.png */; };
+		25C392EE2D03EEF900A4C45F /* panda.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392AB2D03EEF800A4C45F /* panda.png */; };
+		25C392EF2D03EEF900A4C45F /* panda2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392AC2D03EEF800A4C45F /* panda2.png */; };
+		25C392F02D03EEF900A4C45F /* pixilart-sprite-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392AD2D03EEF800A4C45F /* pixilart-sprite-2.png */; };
+		25C392F12D03EEF900A4C45F /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392AE2D03EEF800A4C45F /* player.png */; };
+		25C392F22D03EEF900A4C45F /* slider_hovered.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392AF2D03EEF800A4C45F /* slider_hovered.png */; };
+		25C392F32D03EEF900A4C45F /* slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B02D03EEF800A4C45F /* slider.png */; };
+		25C392F42D03EEF900A4C45F /* Slime.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B12D03EEF800A4C45F /* Slime.png */; };
+		25C392F52D03EEF900A4C45F /* sniper.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B22D03EEF800A4C45F /* sniper.png */; };
+		25C392F62D03EEF900A4C45F /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B32D03EEF800A4C45F /* trophy.png */; };
+		25C392F72D03EEF900A4C45F /* UI_Button_hovered.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B42D03EEF800A4C45F /* UI_Button_hovered.png */; };
+		25C392F82D03EEF900A4C45F /* UI_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B52D03EEF800A4C45F /* UI_Button.png */; };
+		25C392F92D03EEF900A4C45F /* yellow_bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C392B62D03EEF800A4C45F /* yellow_bullet.png */; };
+		25C392FA2D03EEF900A4C45F /* loading_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392B82D03EEF800A4C45F /* loading_scene.c */; };
+		25C392FB2D03EEF900A4C45F /* menu_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392BA2D03EEF900A4C45F /* menu_scene.c */; };
+		25C392FC2D03EEF900A4C45F /* packages.config in Resources */ = {isa = PBXBuildFile; fileRef = 25C392BB2D03EEF900A4C45F /* packages.config */; };
+		25C392FD2D03EEF900A4C45F /* enemy.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392BD2D03EEF900A4C45F /* enemy.c */; };
+		25C392FE2D03EEF900A4C45F /* game_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392BE2D03EEF900A4C45F /* game_scene.c */; };
+		25C392FF2D03EEF900A4C45F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392BF2D03EEF900A4C45F /* main.c */; };
+		25C393002D03EEF900A4C45F /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392C02D03EEF900A4C45F /* utility.c */; };
+		25C393012D03EEF900A4C45F /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 25C392C12D03EEF900A4C45F /* Makefile */; };
+		25C393022D03EEF900A4C45F /* game.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392C62D03EEF900A4C45F /* game.c */; };
+		25C393032D03EEF900A4C45F /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392C82D03EEF900A4C45F /* player.c */; };
+		25C393042D03EEF900A4C45F /* setting_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392C92D03EEF900A4C45F /* setting_scene.c */; };
+		25C393052D03EEF900A4C45F /* UI.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392CA2D03EEF900A4C45F /* UI.c */; };
+		25C393062D03EEF900A4C45F /* weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392CC2D03EEF900A4C45F /* weapon.c */; };
+		25C393072D03EEF900A4C45F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 25C392CD2D03EEF900A4C45F /* README.md */; };
+		25C393082D03EEF900A4C45F /* bullet.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C392CE2D03EEF900A4C45F /* bullet.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		256C33162D02B69300BECC90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256C32F82D02B69100BECC90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256C32FF2D02B69100BECC90;
+			remoteInfo = "final project";
+		};
+		256C33202D02B69300BECC90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256C32F82D02B69100BECC90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256C32FF2D02B69100BECC90;
+			remoteInfo = "final project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25C392862D03EEB900A4C45F /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25C392852D03EEB800A4C45F /* liballegro_video.5.2.10.dylib in Embed Libraries */,
+				25C3926D2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib in Embed Libraries */,
+				25C3927F2D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib in Embed Libraries */,
+				25C392712D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib in Embed Libraries */,
+				25C392772D03EEB800A4C45F /* liballegro_image.5.2.10.dylib in Embed Libraries */,
+				25C392812D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib in Embed Libraries */,
+				25C392752D03EEB800A4C45F /* liballegro.5.2.10.dylib in Embed Libraries */,
+				25C392792D03EEB800A4C45F /* liballegro_color.5.2.10.dylib in Embed Libraries */,
+				25C3927D2D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib in Embed Libraries */,
+				25C3926F2D03EEB800A4C45F /* liballegro_main.5.2.10.dylib in Embed Libraries */,
+				25C3927B2D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib in Embed Libraries */,
+				25C392732D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib in Embed Libraries */,
+				25C392832D03EEB800A4C45F /* liballegro_font.5.2.10.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2522A5CA2D1B9FED00BCB873 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		2522A5CC2D1C2D6C00BCB873 /* lose_scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lose_scene.h; sourceTree = "<group>"; };
+		2522A5CD2D1C2D6C00BCB873 /* lose_scene.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lose_scene.c; sourceTree = "<group>"; };
+		2522A5CF2D1C2D7900BCB873 /* win_scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = win_scene.h; sourceTree = "<group>"; };
+		2522A5D02D1C2D7900BCB873 /* win_scene.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = win_scene.c; sourceTree = "<group>"; };
+		2522A5D22D1C571F00BCB873 /* score_scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = score_scene.h; sourceTree = "<group>"; };
+		2522A5D32D1C571F00BCB873 /* score_scene.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = score_scene.c; sourceTree = "<group>"; };
+		2522A5D52D1C6E1000BCB873 /* shop_scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shop_scene.h; sourceTree = "<group>"; };
+		2522A5D62D1C6E1000BCB873 /* shop_scene.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shop_scene.c; sourceTree = "<group>"; };
+		2538E4EB2D1E455D001B0339 /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
+		2538E4ED2D1E4763001B0339 /* capybara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capybara.png; sourceTree = "<group>"; };
+		256C33002D02B69100BECC90 /* final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256C33092D02B69200BECC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		256C330C2D02B69200BECC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		256C33102D02B69200BECC90 /* final_project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = final_project.entitlements; sourceTree = "<group>"; };
+		256C33152D02B69300BECC90 /* final projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "final projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256C33192D02B69300BECC90 /* final_projectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = final_projectTests.m; sourceTree = "<group>"; };
+		256C331F2D02B69300BECC90 /* final projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "final projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256C33232D02B69300BECC90 /* final_projectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = final_projectUITests.m; sourceTree = "<group>"; };
+		256C33252D02B69300BECC90 /* final_projectUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = final_projectUITestsLaunchTests.m; sourceTree = "<group>"; };
+		2579411A2D20FB8E00BE6C36 /* healthpotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthpotion.png; sourceTree = "<group>"; };
+		257F17D82D1B018B00D9F958 /* nthu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nthu2.png; sourceTree = "<group>"; };
+		257F17DA2D1B01E500D9F958 /* nthu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nthu.png; sourceTree = "<group>"; };
+		25C391E72D03E41F00A4C45F /* liballegro_memfile.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_memfile.5.2.10.dylib; sourceTree = "<group>"; };
+		25C391E82D03E41F00A4C45F /* liballegro_dialog.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_dialog.5.2.dylib; sourceTree = "<group>"; };
+		25C391E92D03E41F00A4C45F /* liballegro_image.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_image.5.2.10.dylib; sourceTree = "<group>"; };
+		25C391EA2D03E41F00A4C45F /* liballegro_memfile.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_memfile.5.2.dylib; sourceTree = "<group>"; };
+		25C391EB2D03E41F00A4C45F /* liballegro_audio.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_audio.5.2.10.dylib; sourceTree = "<group>"; };
+		25C391EC2D03E41F00A4C45F /* liballegro_dialog.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_dialog.dylib; sourceTree = "<group>"; };
+		25C391ED2D03E41F00A4C45F /* liballegro_ttf.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_ttf.5.2.dylib; sourceTree = "<group>"; };
+		25C391EE2D03E41F00A4C45F /* liballegro_image.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_image.5.2.dylib; sourceTree = "<group>"; };
+		25C391EF2D03E41F00A4C45F /* liballegro_acodec.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_acodec.5.2.dylib; sourceTree = "<group>"; };
+		25C391F02D03E41F00A4C45F /* liballegro_audio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_audio.dylib; sourceTree = "<group>"; };
+		25C391F12D03E41F00A4C45F /* liballegro.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.dylib; path = ../../../../../../opt/homebrew/lib/liballegro.dylib; sourceTree = "<group>"; };
+		25C391F22D03E41F00A4C45F /* liballegro_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_image.dylib; sourceTree = "<group>"; };
+		25C391F32D03E41F00A4C45F /* liballegro_font.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_font.5.2.10.dylib; sourceTree = "<group>"; };
+		25C391F42D03E41F00A4C45F /* liballegro_primitives.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_primitives.5.2.dylib; sourceTree = "<group>"; };
+		25C391F52D03E41F00A4C45F /* liballegro_main.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_main.dylib; sourceTree = "<group>"; };
+		25C391F62D03E41F00A4C45F /* liballegro_video.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_video.5.2.10.dylib; sourceTree = "<group>"; };
+		25C391F72D03E41F00A4C45F /* liballegro.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro.5.2.dylib; sourceTree = "<group>"; };
+		25C391F82D03E41F00A4C45F /* liballegro_video.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_video.dylib; sourceTree = "<group>"; };
+		25C391F92D03E41F00A4C45F /* liballegro.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro.5.2.10.dylib; sourceTree = "<group>"; };
+		25C391FA2D03E41F00A4C45F /* liballegro_physfs.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_physfs.dylib; sourceTree = "<group>"; };
+		25C391FB2D03E41F00A4C45F /* liballegro_color.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_color.dylib; sourceTree = "<group>"; };
+		25C391FC2D03E41F00A4C45F /* liballegro_memfile.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_memfile.dylib; sourceTree = "<group>"; };
+		25C391FD2D03E41F00A4C45F /* liballegro_video.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_video.5.2.dylib; sourceTree = "<group>"; };
+		25C391FE2D03E41F00A4C45F /* liballegro_audio.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_audio.5.2.dylib; sourceTree = "<group>"; };
+		25C391FF2D03E41F00A4C45F /* liballegro_primitives.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_primitives.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392002D03E41F00A4C45F /* liballegro_acodec.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_acodec.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392012D03E41F00A4C45F /* liballegro_font.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_font.dylib; sourceTree = "<group>"; };
+		25C392022D03E41F00A4C45F /* liballegro_color.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_color.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392032D03E41F00A4C45F /* liballegro_physfs.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_physfs.5.2.dylib; sourceTree = "<group>"; };
+		25C392042D03E41F00A4C45F /* liballegro_acodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_acodec.dylib; sourceTree = "<group>"; };
+		25C392052D03E41F00A4C45F /* liballegro_main.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_main.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392062D03E41F00A4C45F /* liballegro_color.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_color.5.2.dylib; sourceTree = "<group>"; };
+		25C392072D03E41F00A4C45F /* liballegro_physfs.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_physfs.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392082D03E41F00A4C45F /* liballegro_primitives.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_primitives.dylib; sourceTree = "<group>"; };
+		25C392092D03E41F00A4C45F /* liballegro_ttf.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_ttf.5.2.10.dylib; sourceTree = "<group>"; };
+		25C3920A2D03E41F00A4C45F /* liballegro_ttf.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_ttf.dylib; sourceTree = "<group>"; };
+		25C3920B2D03E41F00A4C45F /* liballegro_dialog.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.10.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_dialog.5.2.10.dylib; sourceTree = "<group>"; };
+		25C3920C2D03E41F00A4C45F /* liballegro_main.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_main.5.2.dylib; sourceTree = "<group>"; };
+		25C3920D2D03E41F00A4C45F /* liballegro_font.5.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.dylib; path = ../../../../../../opt/homebrew/lib/liballegro_font.5.2.dylib; sourceTree = "<group>"; };
+		25C3925F2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_ttf.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392602D03EEB800A4C45F /* liballegro_main.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_main.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392612D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_acodec.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392622D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_audio.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392632D03EEB800A4C45F /* liballegro.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392642D03EEB800A4C45F /* liballegro_image.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_image.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392652D03EEB800A4C45F /* liballegro_color.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_color.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392662D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_dialog.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392672D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_primitives.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392682D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_physfs.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392692D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_memfile.5.2.10.dylib; sourceTree = "<group>"; };
+		25C3926A2D03EEB800A4C45F /* liballegro_font.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_font.5.2.10.dylib; sourceTree = "<group>"; };
+		25C3926B2D03EEB800A4C45F /* liballegro_video.5.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.10.dylib; path = ../../../../../../opt/homebrew/Cellar/allegro/5.2.10.0/lib/liballegro_video.5.2.10.dylib; sourceTree = "<group>"; };
+		25C392872D03EEF800A4C45F /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		25C392882D03EEF800A4C45F /* loading_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loading_scene.h; sourceTree = "<group>"; };
+		25C392892D03EEF800A4C45F /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		25C3928A2D03EEF800A4C45F /* game_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_scene.h; sourceTree = "<group>"; };
+		25C3928B2D03EEF800A4C45F /* UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
+		25C3928C2D03EEF800A4C45F /* coins.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coins.mp3; sourceTree = "<group>"; };
+		25C3928D2D03EEF800A4C45F /* coins.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = coins.ogg; sourceTree = "<group>"; };
+		25C3928E2D03EEF800A4C45F /* coins.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coins.wav; sourceTree = "<group>"; };
+		25C3928F2D03EEF800A4C45F /* game_bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_bgm.mp3; sourceTree = "<group>"; };
+		25C392902D03EEF800A4C45F /* game_bgm.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = game_bgm.ogg; sourceTree = "<group>"; };
+		25C392912D03EEF800A4C45F /* game_bgm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_bgm.wav; sourceTree = "<group>"; };
+		25C392922D03EEF800A4C45F /* menu_bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu_bgm.mp3; sourceTree = "<group>"; };
+		25C392932D03EEF800A4C45F /* menu_bgm.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_bgm.ogg; sourceTree = "<group>"; };
+		25C392942D03EEF800A4C45F /* menu_bgm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = menu_bgm.wav; sourceTree = "<group>"; };
+		25C392952D03EEF800A4C45F /* shooting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shooting.mp3; sourceTree = "<group>"; };
+		25C392962D03EEF800A4C45F /* shooting.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = shooting.ogg; sourceTree = "<group>"; };
+		25C392972D03EEF800A4C45F /* shooting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shooting.wav; sourceTree = "<group>"; };
+		25C392982D03EEF800A4C45F /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		25C392992D03EEF800A4C45F /* win.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = win.ogg; sourceTree = "<group>"; };
+		25C3929A2D03EEF800A4C45F /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		25C3929C2D03EEF800A4C45F /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		25C3929D2D03EEF800A4C45F /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		25C3929E2D03EEF800A4C45F /* coin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_icon.png; sourceTree = "<group>"; };
+		25C3929F2D03EEF800A4C45F /* coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coins.png; sourceTree = "<group>"; };
+		25C392A02D03EEF800A4C45F /* Door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Door.png; sourceTree = "<group>"; };
+		25C392A12D03EEF800A4C45F /* fireball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fireball.png; sourceTree = "<group>"; };
+		25C392A22D03EEF800A4C45F /* guns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guns.png; sourceTree = "<group>"; };
+		25C392A32D03EEF800A4C45F /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		25C392A42D03EEF800A4C45F /* map_packets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_packets.png; sourceTree = "<group>"; };
+		25C392A52D03EEF800A4C45F /* map0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map0.txt; sourceTree = "<group>"; };
+		25C392A62D03EEF800A4C45F /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		25C392A82D03EEF800A4C45F /* orange_bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_bullet.png; sourceTree = "<group>"; };
+		25C392A92D03EEF800A4C45F /* panda_lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda_lose.png; sourceTree = "<group>"; };
+		25C392AA2D03EEF800A4C45F /* panda_win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda_win.png; sourceTree = "<group>"; };
+		25C392AB2D03EEF800A4C45F /* panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda.png; sourceTree = "<group>"; };
+		25C392AC2D03EEF800A4C45F /* panda2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda2.png; sourceTree = "<group>"; };
+		25C392AD2D03EEF800A4C45F /* pixilart-sprite-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pixilart-sprite-2.png"; sourceTree = "<group>"; };
+		25C392AE2D03EEF800A4C45F /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		25C392AF2D03EEF800A4C45F /* slider_hovered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider_hovered.png; sourceTree = "<group>"; };
+		25C392B02D03EEF800A4C45F /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider.png; sourceTree = "<group>"; };
+		25C392B12D03EEF800A4C45F /* Slime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slime.png; sourceTree = "<group>"; };
+		25C392B22D03EEF800A4C45F /* sniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sniper.png; sourceTree = "<group>"; };
+		25C392B32D03EEF800A4C45F /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		25C392B42D03EEF800A4C45F /* UI_Button_hovered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UI_Button_hovered.png; sourceTree = "<group>"; };
+		25C392B52D03EEF800A4C45F /* UI_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UI_Button.png; sourceTree = "<group>"; };
+		25C392B62D03EEF800A4C45F /* yellow_bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_bullet.png; sourceTree = "<group>"; };
+		25C392B82D03EEF800A4C45F /* loading_scene.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loading_scene.c; sourceTree = "<group>"; };
+		25C392B92D03EEF800A4C45F /* enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enemy.h; sourceTree = "<group>"; };
+		25C392BA2D03EEF900A4C45F /* menu_scene.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = menu_scene.c; sourceTree = "<group>"; };
+		25C392BB2D03EEF900A4C45F /* packages.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = packages.config; sourceTree = "<group>"; };
+		25C392BC2D03EEF900A4C45F /* setting_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setting_scene.h; sourceTree = "<group>"; };
+		25C392BD2D03EEF900A4C45F /* enemy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enemy.c; sourceTree = "<group>"; };
+		25C392BE2D03EEF900A4C45F /* game_scene.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = game_scene.c; sourceTree = "<group>"; };
+		25C392BF2D03EEF900A4C45F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		25C392C02D03EEF900A4C45F /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
+		25C392C12D03EEF900A4C45F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		25C392C22D03EEF900A4C45F /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		25C392C32D03EEF900A4C45F /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		25C392C42D03EEF900A4C45F /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		25C392C52D03EEF900A4C45F /* menu_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menu_scene.h; sourceTree = "<group>"; };
+		25C392C62D03EEF900A4C45F /* game.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = game.c; sourceTree = "<group>"; };
+		25C392C72D03EEF900A4C45F /* bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bullet.h; sourceTree = "<group>"; };
+		25C392C82D03EEF900A4C45F /* player.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = player.c; sourceTree = "<group>"; };
+		25C392C92D03EEF900A4C45F /* setting_scene.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = setting_scene.c; sourceTree = "<group>"; };
+		25C392CA2D03EEF900A4C45F /* UI.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UI.c; sourceTree = "<group>"; };
+		25C392CB2D03EEF900A4C45F /* weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weapon.h; sourceTree = "<group>"; };
+		25C392CC2D03EEF900A4C45F /* weapon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = weapon.c; sourceTree = "<group>"; };
+		25C392CD2D03EEF900A4C45F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		25C392CE2D03EEF900A4C45F /* bullet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bullet.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		256C32FD2D02B69100BECC90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C392842D03EEB800A4C45F /* liballegro_video.5.2.10.dylib in Frameworks */,
+				25C3926C2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib in Frameworks */,
+				25C3927E2D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib in Frameworks */,
+				25C392702D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib in Frameworks */,
+				25C392762D03EEB800A4C45F /* liballegro_image.5.2.10.dylib in Frameworks */,
+				25C392802D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib in Frameworks */,
+				25C392742D03EEB800A4C45F /* liballegro.5.2.10.dylib in Frameworks */,
+				25C392782D03EEB800A4C45F /* liballegro_color.5.2.10.dylib in Frameworks */,
+				25C3927C2D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib in Frameworks */,
+				25C3926E2D03EEB800A4C45F /* liballegro_main.5.2.10.dylib in Frameworks */,
+				25C3927A2D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib in Frameworks */,
+				25C392722D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib in Frameworks */,
+				25C392822D03EEB800A4C45F /* liballegro_font.5.2.10.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256C33122D02B69300BECC90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256C331C2D02B69300BECC90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256C32F72D02B69100BECC90 = {
+			isa = PBXGroup;
+			children = (
+				256C33022D02B69100BECC90 /* final project */,
+				256C33182D02B69300BECC90 /* final projectTests */,
+				256C33222D02B69300BECC90 /* final projectUITests */,
+				256C33012D02B69100BECC90 /* Products */,
+				25C391E62D03E41E00A4C45F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		256C33012D02B69100BECC90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				256C33002D02B69100BECC90 /* final project.app */,
+				256C33152D02B69300BECC90 /* final projectTests.xctest */,
+				256C331F2D02B69300BECC90 /* final projectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256C33022D02B69100BECC90 /* final project */ = {
+			isa = PBXGroup;
+			children = (
+				25C392B72D03EEF800A4C45F /* Assets */,
+				25C392CE2D03EEF900A4C45F /* bullet.c */,
+				25C392C72D03EEF900A4C45F /* bullet.h */,
+				2522A5CF2D1C2D7900BCB873 /* win_scene.h */,
+				25C392BD2D03EEF900A4C45F /* enemy.c */,
+				2522A5D02D1C2D7900BCB873 /* win_scene.c */,
+				2522A5CC2D1C2D6C00BCB873 /* lose_scene.h */,
+				2522A5CD2D1C2D6C00BCB873 /* lose_scene.c */,
+				25C392B92D03EEF800A4C45F /* enemy.h */,
+				25C392BE2D03EEF900A4C45F /* game_scene.c */,
+				25C3928A2D03EEF800A4C45F /* game_scene.h */,
+				25C392C62D03EEF900A4C45F /* game.c */,
+				25C392C42D03EEF900A4C45F /* game.h */,
+				25C392B82D03EEF800A4C45F /* loading_scene.c */,
+				25C392882D03EEF800A4C45F /* loading_scene.h */,
+				25C392BF2D03EEF900A4C45F /* main.c */,
+				25C392C12D03EEF900A4C45F /* Makefile */,
+				25C392872D03EEF800A4C45F /* map.c */,
+				25C392892D03EEF800A4C45F /* map.h */,
+				25C392BA2D03EEF900A4C45F /* menu_scene.c */,
+				25C392C52D03EEF900A4C45F /* menu_scene.h */,
+				25C392BB2D03EEF900A4C45F /* packages.config */,
+				25C392C82D03EEF900A4C45F /* player.c */,
+				25C392C32D03EEF900A4C45F /* player.h */,
+				25C392CD2D03EEF900A4C45F /* README.md */,
+				2522A5D22D1C571F00BCB873 /* score_scene.h */,
+				2522A5D32D1C571F00BCB873 /* score_scene.c */,
+				2522A5D52D1C6E1000BCB873 /* shop_scene.h */,
+				2522A5D62D1C6E1000BCB873 /* shop_scene.c */,
+				25C392C92D03EEF900A4C45F /* setting_scene.c */,
+				25C392BC2D03EEF900A4C45F /* setting_scene.h */,
+				25C392CA2D03EEF900A4C45F /* UI.c */,
+				25C3928B2D03EEF800A4C45F /* UI.h */,
+				25C392C02D03EEF900A4C45F /* utility.c */,
+				25C392C22D03EEF900A4C45F /* utility.h */,
+				25C392CC2D03EEF900A4C45F /* weapon.c */,
+				25C392CB2D03EEF900A4C45F /* weapon.h */,
+				256C33092D02B69200BECC90 /* Assets.xcassets */,
+				256C330B2D02B69200BECC90 /* Main.storyboard */,
+				256C33102D02B69200BECC90 /* final_project.entitlements */,
+			);
+			path = "final project";
+			sourceTree = "<group>";
+		};
+		256C33182D02B69300BECC90 /* final projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				256C33192D02B69300BECC90 /* final_projectTests.m */,
+			);
+			path = "final projectTests";
+			sourceTree = "<group>";
+		};
+		256C33222D02B69300BECC90 /* final projectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				256C33232D02B69300BECC90 /* final_projectUITests.m */,
+				256C33252D02B69300BECC90 /* final_projectUITestsLaunchTests.m */,
+			);
+			path = "final projectUITests";
+			sourceTree = "<group>";
+		};
+		25C391E62D03E41E00A4C45F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25C392002D03E41F00A4C45F /* liballegro_acodec.5.2.10.dylib */,
+				25C392612D03EEB800A4C45F /* liballegro_acodec.5.2.10.dylib */,
+				25C392622D03EEB800A4C45F /* liballegro_audio.5.2.10.dylib */,
+				25C392652D03EEB800A4C45F /* liballegro_color.5.2.10.dylib */,
+				25C392662D03EEB800A4C45F /* liballegro_dialog.5.2.10.dylib */,
+				25C3926A2D03EEB800A4C45F /* liballegro_font.5.2.10.dylib */,
+				25C392642D03EEB800A4C45F /* liballegro_image.5.2.10.dylib */,
+				25C392602D03EEB800A4C45F /* liballegro_main.5.2.10.dylib */,
+				25C392692D03EEB800A4C45F /* liballegro_memfile.5.2.10.dylib */,
+				25C392682D03EEB800A4C45F /* liballegro_physfs.5.2.10.dylib */,
+				25C392672D03EEB800A4C45F /* liballegro_primitives.5.2.10.dylib */,
+				25C3925F2D03EEB800A4C45F /* liballegro_ttf.5.2.10.dylib */,
+				25C3926B2D03EEB800A4C45F /* liballegro_video.5.2.10.dylib */,
+				25C392632D03EEB800A4C45F /* liballegro.5.2.10.dylib */,
+				25C391EF2D03E41F00A4C45F /* liballegro_acodec.5.2.dylib */,
+				25C392042D03E41F00A4C45F /* liballegro_acodec.dylib */,
+				25C391EB2D03E41F00A4C45F /* liballegro_audio.5.2.10.dylib */,
+				25C391FE2D03E41F00A4C45F /* liballegro_audio.5.2.dylib */,
+				25C391F02D03E41F00A4C45F /* liballegro_audio.dylib */,
+				25C392022D03E41F00A4C45F /* liballegro_color.5.2.10.dylib */,
+				25C392062D03E41F00A4C45F /* liballegro_color.5.2.dylib */,
+				25C391FB2D03E41F00A4C45F /* liballegro_color.dylib */,
+				25C3920B2D03E41F00A4C45F /* liballegro_dialog.5.2.10.dylib */,
+				25C391E82D03E41F00A4C45F /* liballegro_dialog.5.2.dylib */,
+				25C391EC2D03E41F00A4C45F /* liballegro_dialog.dylib */,
+				25C391F32D03E41F00A4C45F /* liballegro_font.5.2.10.dylib */,
+				25C3920D2D03E41F00A4C45F /* liballegro_font.5.2.dylib */,
+				25C392012D03E41F00A4C45F /* liballegro_font.dylib */,
+				25C391E92D03E41F00A4C45F /* liballegro_image.5.2.10.dylib */,
+				25C391EE2D03E41F00A4C45F /* liballegro_image.5.2.dylib */,
+				25C391F22D03E41F00A4C45F /* liballegro_image.dylib */,
+				25C392052D03E41F00A4C45F /* liballegro_main.5.2.10.dylib */,
+				25C3920C2D03E41F00A4C45F /* liballegro_main.5.2.dylib */,
+				25C391F52D03E41F00A4C45F /* liballegro_main.dylib */,
+				25C391E72D03E41F00A4C45F /* liballegro_memfile.5.2.10.dylib */,
+				25C391EA2D03E41F00A4C45F /* liballegro_memfile.5.2.dylib */,
+				25C391FC2D03E41F00A4C45F /* liballegro_memfile.dylib */,
+				25C392072D03E41F00A4C45F /* liballegro_physfs.5.2.10.dylib */,
+				25C392032D03E41F00A4C45F /* liballegro_physfs.5.2.dylib */,
+				25C391FA2D03E41F00A4C45F /* liballegro_physfs.dylib */,
+				25C391FF2D03E41F00A4C45F /* liballegro_primitives.5.2.10.dylib */,
+				25C391F42D03E41F00A4C45F /* liballegro_primitives.5.2.dylib */,
+				25C392082D03E41F00A4C45F /* liballegro_primitives.dylib */,
+				25C392092D03E41F00A4C45F /* liballegro_ttf.5.2.10.dylib */,
+				25C391ED2D03E41F00A4C45F /* liballegro_ttf.5.2.dylib */,
+				25C3920A2D03E41F00A4C45F /* liballegro_ttf.dylib */,
+				25C391F62D03E41F00A4C45F /* liballegro_video.5.2.10.dylib */,
+				25C391FD2D03E41F00A4C45F /* liballegro_video.5.2.dylib */,
+				25C391F82D03E41F00A4C45F /* liballegro_video.dylib */,
+				25C391F92D03E41F00A4C45F /* liballegro.5.2.10.dylib */,
+				25C391F72D03E41F00A4C45F /* liballegro.5.2.dylib */,
+				25C391F12D03E41F00A4C45F /* liballegro.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25C3929B2D03EEF800A4C45F /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				25C3928C2D03EEF800A4C45F /* coins.mp3 */,
+				25C3928D2D03EEF800A4C45F /* coins.ogg */,
+				25C3928E2D03EEF800A4C45F /* coins.wav */,
+				25C3928F2D03EEF800A4C45F /* game_bgm.mp3 */,
+				25C392902D03EEF800A4C45F /* game_bgm.ogg */,
+				25C392912D03EEF800A4C45F /* game_bgm.wav */,
+				25C392922D03EEF800A4C45F /* menu_bgm.mp3 */,
+				25C392932D03EEF800A4C45F /* menu_bgm.ogg */,
+				25C392942D03EEF800A4C45F /* menu_bgm.wav */,
+				25C392952D03EEF800A4C45F /* shooting.mp3 */,
+				25C392962D03EEF800A4C45F /* shooting.ogg */,
+				25C392972D03EEF800A4C45F /* shooting.wav */,
+				25C392982D03EEF800A4C45F /* win.mp3 */,
+				25C392992D03EEF800A4C45F /* win.ogg */,
+				25C3929A2D03EEF800A4C45F /* win.wav */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		25C392B72D03EEF800A4C45F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				25C3929B2D03EEF800A4C45F /* audio */,
+				25C3929C2D03EEF800A4C45F /* Button.png */,
+				25C3929D2D03EEF800A4C45F /* character.png */,
+				25C3929E2D03EEF800A4C45F /* coin_icon.png */,
+				25C3929F2D03EEF800A4C45F /* coins.png */,
+				25C392A02D03EEF800A4C45F /* Door.png */,
+				25C392A12D03EEF800A4C45F /* fireball.png */,
+				25C392A22D03EEF800A4C45F /* guns.png */,
+				25C392A32D03EEF800A4C45F /* heart.png */,
+				25C392A42D03EEF800A4C45F /* map_packets.png */,
+				25C392A52D03EEF800A4C45F /* map0.txt */,
+				25C392A62D03EEF800A4C45F /* Minecraft.ttf */,
+				257F17D82D1B018B00D9F958 /* nthu2.png */,
+				257F17DA2D1B01E500D9F958 /* nthu.png */,
+				25C392A82D03EEF800A4C45F /* orange_bullet.png */,
+				25C392A92D03EEF800A4C45F /* panda_lose.png */,
+				25C392AA2D03EEF800A4C45F /* panda_win.png */,
+				25C392AB2D03EEF800A4C45F /* panda.png */,
+				25C392AC2D03EEF800A4C45F /* panda2.png */,
+				25C392AD2D03EEF800A4C45F /* pixilart-sprite-2.png */,
+				25C392AE2D03EEF800A4C45F /* player.png */,
+				25C392AF2D03EEF800A4C45F /* slider_hovered.png */,
+				25C392B02D03EEF800A4C45F /* slider.png */,
+				2538E4ED2D1E4763001B0339 /* capybara.png */,
+				2579411A2D20FB8E00BE6C36 /* healthpotion.png */,
+				25C392B12D03EEF800A4C45F /* Slime.png */,
+				2522A5CA2D1B9FED00BCB873 /* cover.png */,
+				25C392B22D03EEF800A4C45F /* sniper.png */,
+				25C392B32D03EEF800A4C45F /* trophy.png */,
+				2538E4EB2D1E455D001B0339 /* player1.png */,
+				25C392B42D03EEF800A4C45F /* UI_Button_hovered.png */,
+				25C392B52D03EEF800A4C45F /* UI_Button.png */,
+				25C392B62D03EEF800A4C45F /* yellow_bullet.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		256C32FF2D02B69100BECC90 /* final project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256C33292D02B69300BECC90 /* Build configuration list for PBXNativeTarget "final project" */;
+			buildPhases = (
+				256C32FC2D02B69100BECC90 /* Sources */,
+				256C32FD2D02B69100BECC90 /* Frameworks */,
+				256C32FE2D02B69100BECC90 /* Resources */,
+				25C392862D03EEB900A4C45F /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "final project";
+			productName = "final project";
+			productReference = 256C33002D02B69100BECC90 /* final project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		256C33142D02B69300BECC90 /* final projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256C332C2D02B69300BECC90 /* Build configuration list for PBXNativeTarget "final projectTests" */;
+			buildPhases = (
+				256C33112D02B69300BECC90 /* Sources */,
+				256C33122D02B69300BECC90 /* Frameworks */,
+				256C33132D02B69300BECC90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256C33172D02B69300BECC90 /* PBXTargetDependency */,
+			);
+			name = "final projectTests";
+			productName = "final projectTests";
+			productReference = 256C33152D02B69300BECC90 /* final projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		256C331E2D02B69300BECC90 /* final projectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256C332F2D02B69300BECC90 /* Build configuration list for PBXNativeTarget "final projectUITests" */;
+			buildPhases = (
+				256C331B2D02B69300BECC90 /* Sources */,
+				256C331C2D02B69300BECC90 /* Frameworks */,
+				256C331D2D02B69300BECC90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256C33212D02B69300BECC90 /* PBXTargetDependency */,
+			);
+			name = "final projectUITests";
+			productName = "final projectUITests";
+			productReference = 256C331F2D02B69300BECC90 /* final projectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		256C32F82D02B69100BECC90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					256C32FF2D02B69100BECC90 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					256C33142D02B69300BECC90 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 256C32FF2D02B69100BECC90;
+					};
+					256C331E2D02B69300BECC90 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 256C32FF2D02B69100BECC90;
+					};
+				};
+			};
+			buildConfigurationList = 256C32FB2D02B69100BECC90 /* Build configuration list for PBXProject "final project" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 256C32F72D02B69100BECC90;
+			productRefGroup = 256C33012D02B69100BECC90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				256C32FF2D02B69100BECC90 /* final project */,
+				256C33142D02B69300BECC90 /* final projectTests */,
+				256C331E2D02B69300BECC90 /* final projectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		256C32FE2D02B69100BECC90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C392F32D03EEF900A4C45F /* slider.png in Resources */,
+				25C392DD2D03EEF900A4C45F /* win.ogg in Resources */,
+				25C392DC2D03EEF900A4C45F /* win.mp3 in Resources */,
+				25C392F12D03EEF900A4C45F /* player.png in Resources */,
+				25C392EE2D03EEF900A4C45F /* panda.png in Resources */,
+				25C392F42D03EEF900A4C45F /* Slime.png in Resources */,
+				25C392DA2D03EEF900A4C45F /* shooting.ogg in Resources */,
+				25C392D12D03EEF900A4C45F /* coins.ogg in Resources */,
+				25C393072D03EEF900A4C45F /* README.md in Resources */,
+				25C392F02D03EEF900A4C45F /* pixilart-sprite-2.png in Resources */,
+				25C392D42D03EEF900A4C45F /* game_bgm.ogg in Resources */,
+				25C392DF2D03EEF900A4C45F /* Button.png in Resources */,
+				25C392E02D03EEF900A4C45F /* character.png in Resources */,
+				257F17D92D1B018B00D9F958 /* nthu2.png in Resources */,
+				25C392D22D03EEF900A4C45F /* coins.wav in Resources */,
+				25C392F62D03EEF900A4C45F /* trophy.png in Resources */,
+				25C392E52D03EEF900A4C45F /* guns.png in Resources */,
+				25C392D02D03EEF900A4C45F /* coins.mp3 in Resources */,
+				25C392EB2D03EEF900A4C45F /* orange_bullet.png in Resources */,
+				25C392E92D03EEF900A4C45F /* Minecraft.ttf in Resources */,
+				2538E4EE2D1E4763001B0339 /* capybara.png in Resources */,
+				25C392E32D03EEF900A4C45F /* Door.png in Resources */,
+				25C392E22D03EEF900A4C45F /* coins.png in Resources */,
+				25C392D32D03EEF900A4C45F /* game_bgm.mp3 in Resources */,
+				25C392EF2D03EEF900A4C45F /* panda2.png in Resources */,
+				25C392F52D03EEF900A4C45F /* sniper.png in Resources */,
+				25C392D92D03EEF900A4C45F /* shooting.mp3 in Resources */,
+				25C392F82D03EEF900A4C45F /* UI_Button.png in Resources */,
+				2522A5CB2D1B9FED00BCB873 /* cover.png in Resources */,
+				25C392ED2D03EEF900A4C45F /* panda_win.png in Resources */,
+				25C392FC2D03EEF900A4C45F /* packages.config in Resources */,
+				25C392D72D03EEF900A4C45F /* menu_bgm.ogg in Resources */,
+				256C330A2D02B69200BECC90 /* Assets.xcassets in Resources */,
+				2538E4EC2D1E455D001B0339 /* player1.png in Resources */,
+				25C392E12D03EEF900A4C45F /* coin_icon.png in Resources */,
+				25C392E62D03EEF900A4C45F /* heart.png in Resources */,
+				25C392EC2D03EEF900A4C45F /* panda_lose.png in Resources */,
+				25C392E42D03EEF900A4C45F /* fireball.png in Resources */,
+				256C330D2D02B69200BECC90 /* Base in Resources */,
+				25C392E72D03EEF900A4C45F /* map_packets.png in Resources */,
+				25C392D62D03EEF900A4C45F /* menu_bgm.mp3 in Resources */,
+				25C392DB2D03EEF900A4C45F /* shooting.wav in Resources */,
+				25C392F22D03EEF900A4C45F /* slider_hovered.png in Resources */,
+				257F17DB2D1B01E500D9F958 /* nthu.png in Resources */,
+				25C392D52D03EEF900A4C45F /* game_bgm.wav in Resources */,
+				2579411B2D20FB8E00BE6C36 /* healthpotion.png in Resources */,
+				25C392DE2D03EEF900A4C45F /* win.wav in Resources */,
+				25C392F72D03EEF900A4C45F /* UI_Button_hovered.png in Resources */,
+				25C392E82D03EEF900A4C45F /* map0.txt in Resources */,
+				25C392D82D03EEF900A4C45F /* menu_bgm.wav in Resources */,
+				25C392F92D03EEF900A4C45F /* yellow_bullet.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256C33132D02B69300BECC90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256C331D2D02B69300BECC90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		256C32FC2D02B69100BECC90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C393022D03EEF900A4C45F /* game.c in Sources */,
+				25C392CF2D03EEF900A4C45F /* map.c in Sources */,
+				25C392FB2D03EEF900A4C45F /* menu_scene.c in Sources */,
+				2522A5D72D1C6E1000BCB873 /* shop_scene.c in Sources */,
+				25C393062D03EEF900A4C45F /* weapon.c in Sources */,
+				25C393002D03EEF900A4C45F /* utility.c in Sources */,
+				25C392FF2D03EEF900A4C45F /* main.c in Sources */,
+				25C392FE2D03EEF900A4C45F /* game_scene.c in Sources */,
+				2522A5D12D1C2D7900BCB873 /* win_scene.c in Sources */,
+				25C392FD2D03EEF900A4C45F /* enemy.c in Sources */,
+				25C393052D03EEF900A4C45F /* UI.c in Sources */,
+				25C393082D03EEF900A4C45F /* bullet.c in Sources */,
+				2522A5D42D1C571F00BCB873 /* score_scene.c in Sources */,
+				25C393012D03EEF900A4C45F /* Makefile in Sources */,
+				25C393032D03EEF900A4C45F /* player.c in Sources */,
+				25C393042D03EEF900A4C45F /* setting_scene.c in Sources */,
+				25C392FA2D03EEF900A4C45F /* loading_scene.c in Sources */,
+				2522A5CE2D1C2D6C00BCB873 /* lose_scene.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256C33112D02B69300BECC90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256C331A2D02B69300BECC90 /* final_projectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256C331B2D02B69300BECC90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256C33242D02B69300BECC90 /* final_projectUITests.m in Sources */,
+				256C33262D02B69300BECC90 /* final_projectUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256C33172D02B69300BECC90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256C32FF2D02B69100BECC90 /* final project */;
+			targetProxy = 256C33162D02B69300BECC90 /* PBXContainerItemProxy */;
+		};
+		256C33212D02B69300BECC90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256C32FF2D02B69100BECC90 /* final project */;
+			targetProxy = 256C33202D02B69300BECC90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		256C330B2D02B69200BECC90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256C330C2D02B69200BECC90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		256C33272D02B69300BECC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.10.0/include;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.10.0/lib;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		256C33282D02B69300BECC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.10.0/include;
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.10.0/lib;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		256C332A2D02B69300BECC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "final project/final_project.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.10.0/lib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nthu.final-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		256C332B2D02B69300BECC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "final project/final_project.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.10.0/lib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nthu.final-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		256C332D2D02B69300BECC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nthu.final-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/final project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/final project";
+			};
+			name = Debug;
+		};
+		256C332E2D02B69300BECC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nthu.final-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/final project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/final project";
+			};
+			name = Release;
+		};
+		256C33302D02B69300BECC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nthu.final-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = "final project";
+			};
+			name = Debug;
+		};
+		256C33312D02B69300BECC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nthu.final-projectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = "final project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		256C32FB2D02B69100BECC90 /* Build configuration list for PBXProject "final project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256C33272D02B69300BECC90 /* Debug */,
+				256C33282D02B69300BECC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256C33292D02B69300BECC90 /* Build configuration list for PBXNativeTarget "final project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256C332A2D02B69300BECC90 /* Debug */,
+				256C332B2D02B69300BECC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256C332C2D02B69300BECC90 /* Build configuration list for PBXNativeTarget "final projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256C332D2D02B69300BECC90 /* Debug */,
+				256C332E2D02B69300BECC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256C332F2D02B69300BECC90 /* Build configuration list for PBXNativeTarget "final projectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256C33302D02B69300BECC90 /* Debug */,
+				256C33312D02B69300BECC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 256C32F82D02B69100BECC90 /* Project object */;
+}
